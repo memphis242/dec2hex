@@ -18,7 +18,7 @@ int main(int argc, char * argv[])
    }
 
    errno = 0;
-   unsigned long int num = strtol(argv[1], &endptr, 10);
+   long int num = strtol(argv[1], &endptr, 10);
    if ( errno != 0 )
    {
       fprintf( stderr,
